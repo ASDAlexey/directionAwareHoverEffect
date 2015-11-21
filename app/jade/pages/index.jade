@@ -1,5 +1,9 @@
 //- index.jade
 extends ../layout.jade
 block content
-    ul#direction-aware-hover-effect.direction-aware-hover-effect
-        li.item-direction-aware-hover-effect
+    div.advantages
+        ul#direction-aware-hover-effect.list-advantages
+            each val in [1, 2, 3, 4, 5,6,7,8,9,10]
+                li.item-direction-aware-hover-effect(style="background-image:url(./images/new-careers/abstract-wolf-art_tn2.jpg)")
+                    img(src="./images/new-careers/default.png")
+                    div.hover-block text
